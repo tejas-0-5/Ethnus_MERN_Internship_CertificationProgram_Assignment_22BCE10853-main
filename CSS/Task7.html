@@ -1,0 +1,96 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: #B52E6E;
+        }
+        
+        .form-container {
+            width: 500px;
+            margin: 50px auto;
+            background-color: #8B2252;
+            padding: 30px;
+            color: white;
+        }
+            
+        label {
+            display: inline-block;
+            width: 150px;
+            font-size: 16px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 250px;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-row">
+            <label>Name:</label>
+            <input type="text" placeholder="your name">
+        </div>
+        
+        <div class="form-row">
+            <label>Email:</label>
+            <input type="email" placeholder="your email">
+        </div>
+        
+        <div class="form-row">
+            <label>Password:</label>
+            <input type="password">
+        </div>
+        
+        <div class="form-row">
+            <label>Phone Number:</label>
+            <input type="tel">
+        </div>
+        
+        <div class="form-row">
+            <label>Gender:</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+        
+        <div class="form-row">
+            <label>Language:</label>
+            <select>
+                <option>Select language</option>
+                <option>English</option>
+                <option>Spanish</option>
+                <option>French</option>
+            </select>
+        </div>
+        
+        <div class="form-row">
+            <label>Zip Code:</label>
+            <input type="text">
+        </div>
+        
+        <div class="form-row">
+            <label>About:</label>
+            <textarea placeholder="Write about yourself..." rows="4"></textarea>
+        </div>
+        
+        <button type="submit">Register</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+    <style>
+        .vnav {
+            width: 200px;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        .vnav div {
+            padding: 15px;
+            background: lightblue;
+            color: blue;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .vnav div.vactive {
+            background: orange !important;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pinakesh Chattopadhyay: 22BCE10507</h2>
+    <br>
+    <div class="vnav">
+        <div class="vactive" onclick="verticalActive(this)">Home</div>
+        <div onclick="verticalActive(this)">Java</div>
+        <div onclick="verticalActive(this)">CSS</div>
+        <div onclick="verticalActive(this)">HTML</div>
+        <div onclick="verticalActive(this)">Bootstrap</div>
+    </div>
+    <script>
+        function verticalActive(clicked) {
+            let items = document.querySelectorAll('.vnav div');
+            items.forEach(item => item.classList.remove('vactive'));
+            clicked.classList.add('vactive');
+        }
+    </script>
+</body>
+</html>

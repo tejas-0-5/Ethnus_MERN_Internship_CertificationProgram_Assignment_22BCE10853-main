@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+    .hnav {
+        border: 1px solid black;
+        margin: 20px;
+        background: #cccccc;
+        padding: 10px;
+    }
+
+    .hnav div {
+        display: inline-block;
+        padding: 10px;
+        color: blue;
+        cursor: pointer;
+    }
+
+    .hactive {
+        background: gray;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+    <h2>Pinakesh Chattopadhyay: 22BCE10507</h2>
+    <br>
+    <div class="hnav">
+        <div class="hactive" onclick="horizontalActive(this)">Home</div>
+        <div onclick="horizontalActive(this)">Java</div>
+        <div onclick="horizontalActive(this)">HTML</div>
+        <div onclick="horizontalActive(this)">CSS</div>
+    </div>
+
+    <script>
+    function horizontalActive(clicked) {
+        let items = document.querySelectorAll('.hnav div');
+        items.forEach(item => item.classList.remove('hactive'));
+        clicked.classList.add('hactive');
+    }
+    </script>
+
+</body>
+</html>
