@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="task8.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration form</h2>
+        <form id="registrationForm">
+            <label>First Name <input type="text" id="firstName"> <span class="error">POOR</span></label>
+            <label>Last Name <input type="text" id="lastName"> <span class="error">POOR</span></label>
+            <label>Email <input type="email" id="email"> <span class="error">POOR</span></label>
+            <label>Password <input type="password" id="password"> <span class="error">POOR</span></label>
+            <label>Re-enter Password <input type="password" id="confirmPassword"> <span class="error">POOR OR MISMATCH</span></label>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+
+            <label>Age <input type="number" id="age"> <span class="error">POOR</span></label>
+            <label>Phone Number <input type="text" id="phone"> <span class="error">POOR</span></label>
+            <label>Address <textarea id="address"></textarea> <span class="error">POOR</span></label>
+            <label>State <input type="text" id="state"> <span class="error">POOR</span></label>
+
+            <label>Country:
+                <select id="country">
+                    <option value="">Choose your country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+            </label>
+
+            <label>Languages known:
+                <input type="checkbox"> English
+                <input type="checkbox"> Kannada
+                <input type="checkbox"> Hindi
+                <input type="checkbox"> Telugu
+            </label>
+
+            <label>
+                <input type="checkbox" id="declaration"> Hereby I declare all the given details are true
+            </label>
+
+            <p>Log in to <a href="#">Ethnus</a> website</p>
+
+            <button type="submit">REGISTER</button>
+        </form>
+    </div>
+
+    <script src="task8.js"></script>
+</body>
+</html>

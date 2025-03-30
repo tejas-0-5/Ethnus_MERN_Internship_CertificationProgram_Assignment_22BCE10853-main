@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    width: 80px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background: #f7f8f9;
+    color: rgb(4, 4, 4);
+    border: 2px solid black; 
+    cursor: pointer;
+}
+
+
+
+
+#result {
+    font-weight: bold;
+    font-size: 18px;
+}

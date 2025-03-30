@@ -1,0 +1,14 @@
+.error {
+    color: red;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+input, textarea {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+input.error-border, textarea.error-border {
+    border: 2px solid red;
+}

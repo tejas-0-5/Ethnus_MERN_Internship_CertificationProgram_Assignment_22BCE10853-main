@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.animation {
+    display: inline-block;
+    position: relative;
+    animation: move 5s linear infinite;
+}
+
+@keyframes move {
+    0% { left: -200px; }
+    100% { left: 100%; }
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+p {
+    color: #000080;
+    font-size: 20px;
+    font-weight: bold;
+}
